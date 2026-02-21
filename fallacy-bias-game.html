@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Fallacies & Biases Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .question { margin-bottom: 20px; }
+        .button { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Fallacies & Biases Game!</h1>
+    <div class="question">
+        <p>Identify the fallacy in the following statement:</p>
+        <p><strong>"If we allow students to redo their tests, soon they'll expect to redo everything in life!"</strong></p>
+        <button class="button" onclick="checkAnswer('slippery-slope')">Slippery Slope</button>
+        <button class="button" onclick="checkAnswer('ad-hominem')">Ad Hominem</button>
+        <button class="button" onclick="checkAnswer('straw-man')">Straw Man</button>
+    </div>
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'slippery-slope') {
+                alert('Correct! This is a slippery slope fallacy.');
+            } else {
+                alert('Incorrect. Try again!');
+            }
+        }
+    </script>
+</body>
+</html>
